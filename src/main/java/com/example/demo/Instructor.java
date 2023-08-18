@@ -1,6 +1,4 @@
 package java.com.example.demo;
-
-import java.util.ArrayList;
 import java.util.Collection;
 
 public class Instructor extends Person implements Teacher{
@@ -15,8 +13,9 @@ public class Instructor extends Person implements Teacher{
 
     @Override
     public void lecture(Iterable<? extends Learner> learners, double numberOfHours) {
-        ArrayList<Learner> learnerArrayList = new ArrayList<>((Collection) learners);
-        learners.forEach(learner -> learner.learn(numberOfHours/learnerArrayList.size()));
+//       ArrayList<Learner> learnerArrayList = new ArrayList<>((Collection) learners);
+//        learners.forEach(learner -> learner.learn(numberOfHours/learnerArrayList.size()));
+        learners.forEach(l -> l.learn(numberOfHours / ((Collection) learners).size()));
 
         }
     }
