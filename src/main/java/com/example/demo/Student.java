@@ -1,0 +1,18 @@
+package java.com.example.demo;
+
+public class Student extends Person implements Learner {
+    double totalStudyTime;
+
+    public Student(Long id, String name) {
+        super(id, name);
+    }
+
+    @Override
+    public void learn(double numerOfHours) {
+        this.totalStudyTime += numerOfHours;
+    }
+
+    public double getTotalStudyTime() {
+        return totalStudyTime;
+    }
+}
