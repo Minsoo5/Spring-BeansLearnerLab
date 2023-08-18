@@ -8,8 +8,8 @@ public class Student extends Person implements Learner {
     }
 
     @Override
-    public void learn(double numerOfHours) {
-        this.totalStudyTime += numerOfHours;
+    public void learn(double numberOfHours) {
+        this.totalStudyTime += numberOfHours;
     }
 
     public double getTotalStudyTime() {
