@@ -1,7 +1,7 @@
 package java.com.example.demo;
 import java.util.Collection;
 
-public class Instructor extends Person implements Teacher{
+public class Instructor extends Person implements Teacher {
     public Instructor(Long id, String name) {
         super(id, name);
     }
