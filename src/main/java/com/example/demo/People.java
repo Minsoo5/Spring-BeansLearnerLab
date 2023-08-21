@@ -1,9 +1,6 @@
 package com.example.demo;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public abstract class People <PersonType extends Person> implements Iterable<Person> {
@@ -40,7 +37,14 @@ public abstract class People <PersonType extends Person> implements Iterable<Per
     }
 
     public PersonType findById(long id) {
-        return this.personList.stream().filter(p -> p.getId() == id).findAny().get();
+//        Optional<Person> p = this.personList.stream().filter(p -> p.getId() == id).findAny().get();
+//        return p.isPresent() ? p.get() : null;
+
+        for (PersonType p : this.personList) {
+            if (p.getId() == id)
+                return p;
+        }  return null;
+
     }
 
     public List<PersonType> findAll() {

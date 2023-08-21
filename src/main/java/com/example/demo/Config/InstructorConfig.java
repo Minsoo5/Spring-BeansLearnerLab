@@ -3,8 +3,9 @@ package com.example.demo.Config;
 import com.example.demo.Instructor;
 import com.example.demo.Instructors;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
-
+@Configuration
 public class InstructorConfig {
     @Bean
     public Instructors tcUsaInstructors() {

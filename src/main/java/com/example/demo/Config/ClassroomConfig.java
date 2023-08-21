@@ -2,9 +2,10 @@ package com.example.demo.Config;
 
 import com.example.demo.*;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.DependsOn;
 
-
+@Configuration
 public class ClassroomConfig {
     @Bean
     @DependsOn({"instructors", "students"})
