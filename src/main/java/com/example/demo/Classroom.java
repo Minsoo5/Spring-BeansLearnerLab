@@ -1,4 +1,5 @@
-package java.com.example.demo;
+package com.example.demo;
+
 
 public class Classroom <PeopleType extends People> {
     private Instructors instructorsList;

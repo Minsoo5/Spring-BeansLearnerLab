@@ -1,4 +1,4 @@
-package java.com.example.demo;
+package com.example.demo;
 
 public class Person {
     final long id;

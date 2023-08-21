@@ -1,9 +1,9 @@
-package java.com.example.demo.Config;
+package com.example.demo.Config;
 
+import com.example.demo.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.DependsOn;
 
-import java.com.example.demo.*;
 
 public class ClassroomConfig {
     @Bean

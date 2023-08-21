@@ -1,9 +1,9 @@
-package java.com.example.demo.Config;
+package com.example.demo.Config;
 
+import com.example.demo.Student;
+import com.example.demo.Students;
 import org.springframework.context.annotation.Bean;
 
-import java.com.example.demo.Student;
-import java.com.example.demo.Students;
 
 public class StudentConfig {
 

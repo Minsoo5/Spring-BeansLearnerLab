@@ -1,10 +1,9 @@
-package java.com.example.demo.Config;
+package com.example.demo.Config;
 
+import com.example.demo.Instructor;
+import com.example.demo.Instructors;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Primary;
-
-import java.com.example.demo.Instructor;
-import java.com.example.demo.Instructors;
 
 public class InstructorConfig {
     @Bean

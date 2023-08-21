@@ -1,9 +1,10 @@
-package java.com.example.demo;
+package com.example.demo;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public abstract class People <PersonType extends Person> implements Iterable<Person> {
 
@@ -12,7 +13,9 @@ public abstract class People <PersonType extends Person> implements Iterable<Per
         this.personList = personList;
     }
     public People(PersonType... person) {
-        Arrays.stream(person).toList().forEach(p -> this.personList.add(p));
+        //Arrays.stream(person).toList().forEach(p -> this.personList.add(p));
+        //Arrays.stream(person).toList().addAll(PersonType, person);
+        personList.addAll(Arrays.stream(person).toList());
     }
 
     public void add(PersonType person) {

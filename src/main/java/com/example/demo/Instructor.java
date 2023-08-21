@@ -1,4 +1,5 @@
-package java.com.example.demo;
+package com.example.demo;
+
 import java.util.Collection;
 
 public class Instructor extends Person implements Teacher {
